@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letter</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: url('love-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            animation: pulseBackground 10s ease-in-out infinite alternate;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            max-width: 80%;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #e91e63;
+            font-size: 3vw;
+            margin-bottom: 2vw;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .heart-icon {
+            font-size: 8vw;
+            color: #e91e63;
+            cursor: pointer;
+            animation: pulseHeart 1s ease-in-out infinite alternate, floatHeart 3s ease-in-out infinite;
+        }
+
+        .accept-button, .decline-button {
+            font-size: 2vw;
+            background-color: #e91e63;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 1vw 3vw;
+            margin: 2vw;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .decline-button {
+            background-color: #888;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5vw;
+        }
+
+        .gif-container {
+            max-width: 80%;
+            margin-top: 2vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tenor-gif-embed {
+            width: 100%;
+        }
+
+        @keyframes pulseHeart {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.1);
+            }
+        }
+
+        @keyframes pulseBackground {
+            from {
+                background-size: 100% 100%;
+            }
+            to {
+                background-size: 110% 110%;
+            }
+        }
+
+        @keyframes floatHeart {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        /* Media query for smaller screens */
+        @media only screen and (max-width: 600px) {
+            h1 {
+                font-size: 6vw;
+            }
+            .heart-icon {
+                font-size: 20vw;
+            }
+            .accept-button, .decline-button {
+                font-size: 4vw;
+                padding: 3vw 6vw;
+                margin: 4vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lucky sent you a message :3</h1>
+        <span class="heart-icon" onclick="redirect()">❤️</span>
+        <div class="tenor-gif-embed" data-postid="1786443005422815632" data-share-method="host" data-aspect-ratio="1.0641" data-width="100%"><a href="https://tenor.com/view/peach-goma-gif-1786443005422815632">Peach Goma GIF</a>from <a href="https://tenor.com/search/peach+goma-gifs">Peach Goma GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    </div>
+    <div class="button-container">
+        <button class="accept-button" onclick="acceptRequest()">Accept</button>
+        <button class="decline-button" onclick="declineRequest()">Decline</button>
+    </div>
+    <div class="gif-container">
+        <div class="tenor-gif-embed" data-postid="1786443005422815632" data-share-method="host" data-aspect-ratio="1.0641" data-width="100%"><a href="https://tenor.com/view/peach-goma-gif-1786443005422815632">Peach Goma GIF</a>from <a href="https://tenor.com/search/peach+goma-gifs">Peach Goma GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    </div>
+    <script>
+        function redirect() {
+            window.location.href = "index.html";
+        }
+
+        function acceptRequest() {
+            alert("Yeyyy! Click ok to proceed.");
+            window.location.href = "intro.html"
+        }
+
+        function declineRequest() {
+            window.location.href = "sadKitty.html";
+        }
+    </script>
+</body>
+</html>

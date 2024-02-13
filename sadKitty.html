@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whyyyyyy???</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fde0dc; /* Light pink background */
+            background-image: url('https://i.imgur.com/nuOpP1t.png'); /* Broken heart background */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative; /* Add relative positioning to the body */
+        }
+        .message-container {
+            text-align: center;
+            max-width: 80%; /* Adjust the max width of the content */
+        }
+        .message {
+            font-size: 4vw;
+            color: #8e3531; /* Dark red font color */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin-bottom: 1em;
+        }
+        .tenor-gif-embed {
+            max-width: 100%; /* Adjust the GIF container width */
+            margin-bottom: 1em; /* Add space between the GIF and message */
+        }
+        .back-link {
+            position: absolute; /* Position the back link absolutely */
+            top: 10px; /* Distance from the top */
+            left: 10px; /* Distance from the left */
+            text-decoration: none; /* Remove underline */
+            color: #000; /* Black color */
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #e91e63;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #c2185b;
+        }
+
+        /* Media query for smaller screens */
+        @media only screen and (max-width: 600px) {
+            .message {
+                font-size: 8vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="javascript:history.back()" class="back-link"><u>Go Back</u></a>
+    <div class="message-container">
+        <div class="message">
+            How dare you!
+        </div>
+        <div class="tenor-gif-embed" data-postid="17490601" data-share-method="host" data-aspect-ratio="1.15942" data-width="100%"><a href="https://tenor.com/view/sad-cat-dejected-mochi-mochi-peach-cat-gray-cat-gif-17490601">Sad Cat GIF</a>from <a href="https://tenor.com/search/sad-gifs">Sad GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        <div class="message">
+            <small>Now I'm sad</small>
+        </div>
+        <button onclick="acceptRequest()">Okay, I'm sorry for being a "b", I will accept this time.</button>
+    </div>
+</body>
+</html>
+<script>
+       function acceptRequest() {
+            alert("Good! Now click okay to proceed.")
+            window.location.href = "loveRequest.html"
+        }
+</script>
